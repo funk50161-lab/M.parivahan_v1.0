@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Store UI Clone</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: white;
+    }
+
+    /* Container */
+    .container {
+      padding: 15px;
+    }
+
+    /* App Header */
+    .app-header {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .app-header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 16px; /* Rounded corners like Play Store */
+      margin-right: 15px;
+    }
+
+    .info h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .info p {
+      font-size: 14px;
+      color: #ccc;
+      margin: 4px 0 0;
+    }
+
+    /* Install Section */
+    .install-section {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .top-details {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    .top-details div {
+      flex: 1;
+    }
+
+    .top-details h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .top-details p {
+      font-size: 12px;
+      color: #ccc;
+      margin: 2px 0 0;
+    }
+
+    /* Install Button */
+    .install-button {
+      background: #1a73e8;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Screenshots Section */
+    .screenshots {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 15px;
+    }
+
+    .screenshots img {
+      width: 180px;
+      border-radius: 12px;
+      flex-shrink: 0;
+    }
+
+    /* Data Safety Section */
+    .data-safety {
+      background: #111;
+      padding: 15px;
+      margin: 15px;
+      border-radius: 12px;
+    }
+
+    .data-safety p {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* Ratings & Review Section */
+    .review-section {
+      background: #111;
+      padding: 15px;
+      margin: 15px;
+      border-radius: 12px;
+    }
+
+    .review-header h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .review-rating {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .review-rating h1 {
+      font-size: 40px;
+      margin: 0;
+      margin-right: 10px;
+    }
+
+    .stars {
+      display: flex;
+      margin-top: 5px;
+    }
+
+    .stars span {
+      color: #4a90e2;
+      font-size: 20px;
+      margin-right: 3px;
+    }
+
+    /* Individual Review */
+    .user-review {
+      margin-top: 20px;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .user-info img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; /* ✅ Perfect circle */
+      margin-right: 10px;
+    }
+
+    .user-info h4 {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .review-date {
+      font-size: 12px;
+      color: #ccc;
+    }
+
+    .review-text {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    /* Bottom Navigation */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #111;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      border-top: 1px solid #222;
+    }
+
+    .bottom-nav div {
+      text-align: center;
+      color: #ccc;
+      font-size: 12px;
+    }
+
+    .bottom-nav img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- App Header -->
+    <div class="app-header">
+      <img src="https://i.postimg.cc/vBKgv0cR/IMG-20250828-201033-092.jpg" alt="App Logo">
+      <div class="info">
+        <h1>NextGen mParivahan</h1>
+        <p>By Ministry of Road Transport & Highways, Government of India</p>
+      </div>
+    </div>
+
+    <!-- Install Section -->
+    <div class="install-section">
+      <div class="top-details">
+        <div>
+          <h2>3.8 ★</h2>
+          <p>6.8L reviews</p>
+        </div>
+        <div>
+          <h2>10M+</h2>
+          <p>Downloads</p>
+        </div>
+        <div>
+          <h2>Govt</h2>
+          <p>Verified App</p>
+        </div>
+      </div>
+      <a href="https://github.com/funk50161-lab/Mparivahan/releases/download/V1.0/Mparivahan_v1.0.apk" target="_blank" style="text-decoration: none;">
+  <div class="install-button">Install</div>
+</a>
+    </div>
+
+    <!-- Screenshots Section -->
+    <div class="screenshots">
+      <img src="https://i.postimg.cc/bvv9zL7D/Screenshot-2025-08-27-15-58-04-83-b5a5c5cb02ca09c784c5d88160e2ec24.jpg" alt="s1">
+      <img src="https://i.postimg.cc/bNSybzxw/Screenshot-2025-08-27-15-58-11-19-b5a5c5cb02ca09c784c5d88160e2ec24.jpg" alt="s2">
+      <img src="https://i.postimg.cc/9MK6PDdb/Screenshot-2025-08-27-15-58-15-39-b5a5c5cb02ca09c784c5d88160e2ec24.jpg" alt="s3">
+      <img src="https://i.postimg.cc/90xqNjfL/Screenshot-2025-08-27-15-58-20-94-b5a5c5cb02ca09c784c5d88160e2ec24.jpg" alt="s4">
+      <img src="https://i.postimg.cc/sx6MYN6v/Screenshot-2025-08-27-21-15-58-86-b5a5c5cb02ca09c784c5d88160e2ec24.jpg" alt="s5">
+      <img src="https://i.postimg.cc/2jwhjHwp/Screenshot-2025-08-27-21-16-03-00-b5a5c5cb02ca09c784c5d88160e2ec24.jpg" alt="s6">
+      <img src="https://i.postimg.cc/B6fHbkk3/Screenshot-2025-08-27-21-16-09-44-b5a5c5cb02ca09c784c5d88160e2ec24.jpg" alt="s7">
+    </div>
+
+    <!-- Data Safety Section -->
+    <div class="data-safety">
+      <p>🔗 No data shared with third parties</p>
+      <p>☁️ This app may collect these data types: Location, Personal info and 5 others</p>
+      <p>🔒 Data is encrypted in transit</p>
+      <p>🗑️ Account deletion available</p>
+    </div>
+
+    <!-- Ratings & Review Section -->
+    <div class="review-section">
+      <div class="review-header">
+        <h2>Ratings and Reviews</h2>
+      </div>
+
+      <div class="review-rating">
+        <h1>3.8</h1>
+        <div>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+          </div>
+          <p>682,112 total</p>
+        </div>
+      </div>
+
+      <!-- User Review -->
+      <div class="user-review">
+        <div class="user-info">
+          <img src="https://www.w3schools.com/w3images/avatar2.png" alt="User">
+          <div>
+            <h4>Gunasekaran S A</h4>
+            <p class="review-date">25/08/2025</p>
+          </div>
+        </div>
+        <div class="stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="review-text">
+          Good app to see vehicle details. Registered just now and working fine.
+          Virtual DL and RC makes it easier to validate when needed. 
+          I used another app before installing this app...
+        </p>
+        <p style="font-size:12px; color:#ccc;">1 person found this helpful</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/controller.png" alt="Games">
+      <p>Games</p>
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/apps.png" alt="Apps">
+      <p>Apps</p>
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="Search">
+      <p>Search</p>
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/sale.png" alt="Offers">
+      <p>Offers</p>
+    </div>
+    <div>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/book.png" alt="Books">
+      <p>Books</p>
+    </div>
+  </div>
+
+</body>
+</html>
